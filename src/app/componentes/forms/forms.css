@@ -1,0 +1,94 @@
+
+/* Fondo y centrado de todo */
+.page-wrapper {
+    display: flex;
+    justify-content: center;   /* Centrado horizontal */
+    align-items: center;       /* Centrado vertical */
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4f46e5, #0ea5e9); /* Colores */
+}
+
+/* Caja del formulario */
+.page-wrapper > div {
+    background: #ffffff;
+    padding: 35px;
+    width: 420px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #93c5fd;
+    background: #eff6ff;
+    border-radius: 10px;
+    margin-top: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+}
+
+/* Labels */
+label {
+    color: #1e40af;
+    font-weight: 600;
+}
+
+/* Texto pequeño */
+small {
+    color: #64748b;
+}
+
+/* Check */
+.form-group-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    color: #1e40af;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #1e3a8a;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0f1f5f;
+}
+/* FOOTER */
+.footer {
+  background: #1a1a1a;
+  color: #d74444;
+  text-align: center;
+  padding: 25px 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  border-top: 3px solid #66a6ff;
+}

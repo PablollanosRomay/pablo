@@ -1,0 +1,35 @@
+header {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #eef1f6;
+  color: #222;
+}
+
+/* ================================
+   NAV
+================================ */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0; /* Lo movemos a la izquierda */
+  background: #1a1a1a;
+  padding: 10px 10px; /* Tamaño más pequeño */
+  border-radius: 0 0 15px 0; /* Ajustamos la esquina redondeada a la derecha inferior */
+  z-index: 1000;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 6px 0; /* Espaciado más pequeño */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem; /* Letra más pequeña */
+}
+
+nav a:hover {
+  color: #00c3ff;
+}
+

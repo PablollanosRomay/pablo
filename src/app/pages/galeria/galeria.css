@@ -1,0 +1,115 @@
+/* ===== FONDO GENERAL ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #4692de 0%, #ce3131 100%);
+    color: #1e2a38;
+}
+
+/* ===== CONTENIDO ===== */
+.section3 {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(198, 60, 60, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(6px);
+}
+
+h1 {
+    text-align: center;
+    color: #010a11;
+    margin-bottom: 20px;
+}
+
+/* ===== IMAGEN PRINCIPAL ===== */
+.gallery-image {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-image img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    border: 6px solid #ed6666;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== GALERÍA DE 3 IMÁGENES ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background: rgb(228, 97, 97);
+    padding: 15px;
+    border-radius: 18px;
+    border: 4px solid #0c1dd3;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* ===== VIDEO ===== */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 6px solid #e53b3b;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+/* FOOTER */
+.footer {
+  background: #1a1a1a;
+  color: #d74444;
+  text-align: center;
+  padding: 25px 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  border-top: 3px solid #66a6ff;
+}
+
+/* ===== RESPONSIVIDAD EXTRA ===== */
+@media (max-width: 600px) {
+    .gallery-grid img {
+        height: 180px;
+        padding: 12px;
+    }
+
+    .gallery-image img {
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
