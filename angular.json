@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/federal",
+            "outputPath": "dist/federal/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -64,6 +64,46 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/federal/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true
+            },
+            "development": {
+              "optimization": false
+            }
+          }
+        },
+
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "options": {
+            "browserTarget": "federal:build:development",
+            "serverTarget": "federal:server:development"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "federal:build:production",
+              "serverTarget": "federal:server:production"
+            }
+          }
+        },
+
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": ["/"],
+            "browserTarget": "federal:build:production",
+            "serverTarget": "federal:server:production"
+          }
         },
 
         "extract-i18n": {
