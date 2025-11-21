@@ -13,6 +13,7 @@ export const routes: Routes = [
   { path: 'galeria', component: GALERIA },
   { path: 'contactos', component: Contactos },
   { path: 'resumen', component: Resumen }
+  
 ];
 
 @NgModule({
